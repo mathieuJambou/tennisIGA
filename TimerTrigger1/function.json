@@ -1,0 +1,18 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "mytimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "*/60 * * * * *"
+    },
+    {
+      "name": "inputblob",
+      "type": "blob",
+      "path": "funcresources/tennis.xsl",
+      "connection": "MyStorageConnectionString",
+      "direction": "in"
+    }
+  ]
+}
